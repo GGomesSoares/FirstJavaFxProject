@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginscreen.LogIn">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../Users/soare/Downloads/abstract-realistic-technology-particle-background-concept/3431361.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="402.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="87.0" layoutX="164.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Users/soare/Downloads/JavaFxLogInForm-main/JavaFxLogInForm-main/loginForm/src/img/lock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="140.0" text="Username" textFill="#2dc6e1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="222.0" text="Password" textFill="#2dc6e1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="button" layoutX="174.0" layoutY="303.0" mnemonicParsing="false" onAction="#userLogIn" text="Button" textFill="#2dc6e1" />
+            <TextField fx:id="username" layoutX="145.0" layoutY="143.0" promptText="Username" />
+            <Label fx:id="wrongLogIn" layoutX="187.0" layoutY="102.0" textFill="#2dc6e1" />
+            <PasswordField fx:id="password" layoutX="145.0" layoutY="225.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
